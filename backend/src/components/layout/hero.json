@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_layout_heroes",
+  "info": {
+    "displayName": "hero",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "firstTitle": {
+      "type": "string"
+    },
+    "secondeTitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "input": {
+      "displayName": "heroInput",
+      "type": "component",
+      "repeatable": false,
+      "component": "input.hero-input"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

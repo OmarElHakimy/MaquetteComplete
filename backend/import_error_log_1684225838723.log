@@ -1,0 +1,59 @@
+[FATAL] Invalid schema changes detected during integrity checks (using the strict strategy). Please find a summary of the changes below:
+- admin::permission:
+  -  exists in destination schema but not in source schema
+- admin::user:
+  -  exists in destination schema but not in source schema
+- admin::role:
+  -  exists in destination schema but not in source schema
+- admin::api-token:
+  -  exists in destination schema but not in source schema
+- admin::api-token-permission:
+  -  exists in destination schema but not in source schema
+- admin::transfer-token:
+  -  exists in destination schema but not in source schema
+- admin::transfer-token-permission:
+  -  exists in destination schema but not in source schema
+- api::home-page.home-page:
+  -  exists in destination schema but not in source schema
+- api::why-us.why-us:
+  -  exists in destination schema but not in source schema
+- plugin::upload.file:
+  -  exists in destination schema but not in source schema
+- plugin::upload.folder:
+  -  exists in destination schema but not in source schema
+- plugin::i18n.locale:
+  -  exists in destination schema but not in source schema
+- plugin::users-permissions.permission:
+  -  exists in destination schema but not in source schema
+- plugin::users-permissions.role:
+  -  exists in destination schema but not in source schema
+- plugin::users-permissions.user:
+  -  exists in destination schema but not in source schema
+- input.button:
+  -  exists in destination schema but not in source schema
+- input.hero-input:
+  -  exists in destination schema but not in source schema
+- layout.area-of-practice:
+  -  exists in destination schema but not in source schema
+- layout.footer:
+  -  exists in destination schema but not in source schema
+- layout.header:
+  -  exists in destination schema but not in source schema
+- layout.hero:
+  -  exists in destination schema but not in source schema
+- layout.introduce-ourself:
+  -  exists in destination schema but not in source schema
+- layout.why-us:
+  -  exists in destination schema but not in source schema
+- shared.link:
+  -  exists in destination schema but not in source schema
+- shared.menu:
+  -  exists in destination schema but not in source schema
+- shared.meta-social:
+  -  exists in destination schema but not in source schema
+- shared.practice-card:
+  -  exists in destination schema but not in source schema
+- shared.seo:
+  -  exists in destination schema but not in source schema
+- shared.why-us-card:
+  -  exists in destination schema but not in source schema

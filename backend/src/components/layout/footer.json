@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_layout_footers",
+  "info": {
+    "displayName": "footer"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "menu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    },
+    "copyright": {
+      "type": "string"
+    },
+    "routes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

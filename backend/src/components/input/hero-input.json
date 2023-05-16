@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_input_hero_inputs",
+  "info": {
+    "displayName": "heroInput"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "buttonTitle": {
+      "type": "string"
+    }
+  }
+}

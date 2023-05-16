@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_practice_cards",
+  "info": {
+    "displayName": "practiceCard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "cover": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

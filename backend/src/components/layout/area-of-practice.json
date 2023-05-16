@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_layout_area_of_practices",
+  "info": {
+    "displayName": "areaOfPractice"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "card": {
+      "displayName": "practiceCard",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.practice-card"
+    }
+  }
+}

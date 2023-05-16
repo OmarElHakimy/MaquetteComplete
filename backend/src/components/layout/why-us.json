@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_layout_whyuses",
+  "info": {
+    "displayName": "whyUs"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "card": {
+      "displayName": "whyUsCard",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.why-us-card"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "input.button"
+    }
+  }
+}

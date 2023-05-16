@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_why_us_cards",
+  "info": {
+    "displayName": "whyUsCard"
+  },
+  "options": {},
+  "attributes": {
+    "rate": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
