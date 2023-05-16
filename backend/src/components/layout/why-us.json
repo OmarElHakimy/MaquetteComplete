@@ -1,7 +1,8 @@
 {
   "collectionName": "components_layout_whyuses",
   "info": {
-    "displayName": "whyUs"
+    "displayName": "whyUs",
+    "description": ""
   },
   "options": {},
   "attributes": {

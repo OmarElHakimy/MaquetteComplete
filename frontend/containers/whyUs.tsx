@@ -16,14 +16,12 @@ const WhyUs :FC<Props> = ({whyUs, addWhyUs, removeWhyUs}) => {
             <p className='text-center mb-14 font-semibold text-6xl'>{whyUs.title}</p>
             <div className='grid grid-cols-12'>
                 {
-                    whyUs.card?.map( (data :any) => {
-                        console.log(data);
-                        return (
+                    whyUs.card?.map( (data :any) => (
                             <div key={data.id} className='col-span-12 lg:col-span-6 xl:col-span-4 my-2 mx-2 odd:bg-inherit even:bg-zinc-950 rounded-xl border-white border-2 border-opacity-5'>
                                 <WhyUsComp data={data} addWhyUs={addWhyUs} removeWhyUs={removeWhyUs}/>
                             </div>
                         )
-                    })
+                    )
                 }
             </div>
         </div>

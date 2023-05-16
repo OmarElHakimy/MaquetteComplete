@@ -98,6 +98,7 @@ export const GET_HOME_PAGE = gql`
               __typename
               title
               card {
+                id
                 rate
                 description
               }
