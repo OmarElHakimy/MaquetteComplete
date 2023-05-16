@@ -1,4 +1,3 @@
-the maquette folder has two folders:
 the frontend folder:
 use the npm install command for installing all package that may apps need
 the backend folder:
