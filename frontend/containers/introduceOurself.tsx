@@ -5,7 +5,7 @@ const IntroduceOurself :React.FC<any> = ({introduceOurself}) => {
         <div className='py-10 xl:py-20'>
             <div className='grid grid-cols-12'>
                 <div className='col-span-12 lg:col-span-6 my-auto me-2'>
-                    <h1 className='font-semibold text-center lg:text-start text-6xl leading-normal'>{introduceOurself.title}</h1>
+                    <h2 className='font-semibold text-center lg:text-start text-6xl leading-normal'>{introduceOurself.title}</h2>
                 </div>
                 <div className='col-span-1 border-l-2 border-zinc-900 hidden lg:block'>
 
@@ -15,7 +15,7 @@ const IntroduceOurself :React.FC<any> = ({introduceOurself}) => {
                 </div>
                 <div className='col-span-12 lg:col-span-5'>
                     <div className='ms-auto'>
-                        <h4 className='font-semibold text-4xl my-6'>{introduceOurself.subTitle}</h4>
+                        <h3 className='font-semibold text-4xl my-6'>{introduceOurself.subTitle}</h3>
                         <p className='text-zinc-700 font-medium text-lg my-6'>
                             {introduceOurself.description}
                         </p>

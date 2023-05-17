@@ -116,8 +116,6 @@ const Home :FC<any> = ({homePage}) => {
     <div className={`border-box text-white ${inter.className}`}>
       <Wrapper>
           <Navigation header={homePage.header}/>
-      </Wrapper>
-      <Wrapper class="pt-0">
           { hero }
       </Wrapper>
       <Wrapper class="opacity-90">

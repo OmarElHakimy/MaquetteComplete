@@ -4,8 +4,9 @@ import { AnimatePresence, motion } from 'framer-motion'
 import Nav from '../components/navigation/nav'
 import logo from '../public/assets/images/logo.png'
 import Link from 'next/link'
-import NavMobi from '../components/navigation/navMobi';
+// import NavMobi from '../components/navigation/navMobi';
 import {NavAnimation} from '../animation/animation';
+import Button from '../components/layout/button'
 
 const Navigation :React.FC<any> = ({header}) => {
 
@@ -28,35 +29,39 @@ const Navigation :React.FC<any> = ({header}) => {
 
     return(
         <>
-        <div className="grid grid-cols-2 xl:grid-cols-3">
-            <div>
-                <Image src={logo} alt="eight-id" width={176} height={41}/>
-            </div>
-            <div className='hidden xl:flex items-center justify-center'>
-                <Nav menu={header.menu.navItem}/>
-            </div>
-            <div className='hidden xl:flex items-center justify-end'>
-                <Link href={header.button.href} className='border-2 border-white border-solid px-4 py-2 hover:bg-white hover:text-black font-semibold'>{header.button.title}</Link>
-            </div>
-            {
-                !isDisplay
-                ?
-                <div className='flex xl:hidden justify-end items-center'>
-                    <i className='bi bi-list text-4xl hover:cursor-pointer hover:scale-110 hover:text-yellow-500' onClick={onDisplayHandler}></i>
+            <div className="grid grid-cols-2 xl:grid-cols-3">
+                <div>
+                    <Image className='my-auto' src={logo} alt="eight-id" width={176} height={41}/>
                 </div>
-                :
-                <div className='flex xl:hidden justify-end items-center'>
-                    <i className='bi bi-x-lg text-4xl hover:cursor-pointer hover:text-yellow-500' onClick={onHiddenHandler}></i>
+                <div className='hidden xl:flex items-center justify-center'>
+                    <Nav menu={header.menu.navItem}/>
                 </div>
-            }
-            
-        </div>
+                <div className='hidden xl:flex items-center justify-end'>
+                    <Button href={header.button.href} title={header.button.title}/>
+                </div>
+                {
+                    !isDisplay
+                    ?
+                    <div className='flex xl:hidden justify-end items-center'>
+                        <i className='bi bi-list text-4xl hover:cursor-pointer hover:scale-110 hover:text-yellow-500' onClick={onDisplayHandler}></i>
+                    </div>
+                    :
+                    <div className='flex xl:hidden justify-end items-center'>
+                        <i className='bi bi-x-lg text-4xl hover:cursor-pointer hover:text-yellow-500' onClick={onHiddenHandler}></i>
+                    </div>
+                }
+                
+            </div>
             <AnimatePresence mode="wait">
             {
                 isDisplay
                 &&
                 <motion.div className='block xl:hidden' initial="initial" animate="animate" exit="exit" variants={NavAnimation}>
-                    <NavMobi menu={header.menu.navItem} button={header.button}/>
+                    <Nav menu={header.menu.navItem}>
+                        <li className='my-8'>
+                            <Button href={header.button.href} title={header.button.title}/>
+                        </li>
+                    </Nav>
                 </motion.div>
             }
             </AnimatePresence>    

@@ -12,8 +12,7 @@ const Content :React.FC<any> = ({header}) => {
         <div className='py-4 grid col-span-12 xl:col-span-7 text-white text-center xl:text-start my-auto order-2 xl:order-1'>
             <div className='mb-4'>
                 <div className='xl:text-start text-center'>
-                    <p className='font-medium leading-tight text-7xl xl:my-4 my-2'>{header.firstTitle}</p>
-                    <p className='font-semibold leading-tight text-7xl xl:my-4 my-2'>{header.secondeTitle}</p>
+                    <h1 className='font-semibold leading-tight text-7xl xl:my-4 my-2 first-line:font-normal'>{header.title}</h1>
                 </div> 
             </div>
             <p className='text-zinc-600 font-medium text-lg xl:text-start text-center mb-8'>

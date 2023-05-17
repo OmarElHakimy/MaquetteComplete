@@ -13,7 +13,7 @@ type Props = {
 const WhyUs :FC<Props> = ({whyUs, addWhyUs, removeWhyUs}) => {
     return (
         <div className='py-10 xl:py-20'>
-            <p className='text-center mb-14 font-semibold text-6xl'>{whyUs.title}</p>
+            <h2 className='text-center mb-14 font-semibold text-6xl'>{whyUs.title}</h2>
             <div className='grid grid-cols-12'>
                 {
                     whyUs.card?.map( (data :any) => (

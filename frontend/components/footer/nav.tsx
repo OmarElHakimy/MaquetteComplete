@@ -10,7 +10,7 @@ const Nav :React.FC<any> = ({menu}) => {
                 {
                     menu.map((navItem :any) => (
                         <li key={navItem.url} className='xl:my-0 my-2'>
-                            <Link href={`${navItem.url}`} className={router.pathname == navItem.url ? "font-normal hover:text-lg hover:text-yellow-500" : "font-semibold hover:text-lg hover:text-yellow-500"}>{navItem.title}</Link>
+                            <Link href={`${navItem.url}`} className={router.pathname == navItem.url ? "font-normal hover:text-yellow-500" : "font-semibold hover:text-yellow-500"}>{navItem.title}</Link>
                         </li>
                     ))
                 }

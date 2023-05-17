@@ -6,10 +6,7 @@
   },
   "options": {},
   "attributes": {
-    "firstTitle": {
-      "type": "string"
-    },
-    "secondeTitle": {
+    "title": {
       "type": "string"
     },
     "description": {
@@ -28,9 +25,6 @@
       "type": "component",
       "repeatable": false,
       "component": "input.hero-input"
-    },
-    "title": {
-      "type": "string"
     }
   }
 }

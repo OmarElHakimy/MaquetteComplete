@@ -73,8 +73,6 @@ export const GET_HOME_PAGE = gql`
             ... on ComponentLayoutHero {
               __typename
               title
-              firstTitle
-              secondeTitle
               description
               images {
                 data {

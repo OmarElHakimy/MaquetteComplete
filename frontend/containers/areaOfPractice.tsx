@@ -17,7 +17,7 @@ const strapiAssetsUrl = "http://127.0.0.1:1337";
 const AreaOfPractice :React.FC<any> = ({areaOfPractice}) => {
     return (
         <div className='py-10 xl:py-20'>
-            <h1 className='text-center font-semibold text-6xl mb-14'>{areaOfPractice.title}</h1>
+            <h2 className='text-center font-semibold text-6xl mb-14'>{areaOfPractice.title}</h2>
             <div className='grid grid-cols-12'>
                 <Long title={areaOfPractice.card[0].title} img={`${strapiAssetsUrl}${areaOfPractice.card[0].cover.data.attributes.formats}`}/>
                 <Short title={areaOfPractice.card[1].title} img={`${strapiAssetsUrl}${areaOfPractice.card[1].cover.data.attributes.formats}`}/>
