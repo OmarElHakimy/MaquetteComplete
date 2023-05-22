@@ -5,18 +5,16 @@ const Nav :React.FC<any>= ({menu, children}) => {
     const router = useRouter();
     
     return(
-        <div className="flex justify-left xl:justify-center">
-            <ul className="xl:grid xl:grid-flow-col lg:gap-x-4 gap-2 md:py-4 py-4">
+            <ul className="flex xl:flex-row xl:justify-center xl:space-x-6 flex-col justify-left md:py-4">
                 {
                     menu.map((navItem :any) => (
-                        <li key={navItem.url} className='xl:my-0 my-2'>
+                    <li key={navItem.url} className='xl:my-0 my-0.5'>
                             <Link href={`${navItem.url}`} className={router.pathname == navItem.url ? "font-normal hover:text-yellow-500" : "font-semibold hover:text-yellow-500"}>{navItem.title}</Link>
                         </li>
                     ))
                 }
                 {children}
             </ul>
-        </div>
     )
 }
 export default Nav;
